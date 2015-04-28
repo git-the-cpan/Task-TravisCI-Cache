@@ -5,7 +5,7 @@ NAME
 
 VERSION
 
-    version 0.001
+    version 0.002
 
 DESCRIPTION
 
@@ -14,7 +14,10 @@ DESCRIPTION
 
     Note that while I say "my ... cache", that certainly doesn't mean that
     you cannot use it, or that I won't accept pull-requests for the
-    inclusion of additional packages (within reason, at least).
+    inclusion of additional packages (within reason, at least). While I'm
+    aiming for a more general use case than "just @RsrchBoy's
+    distributions", for right now that provides a convenient initial
+    target.
 
     This distribution is build using the LatestPrereqs plugin, so it will
     always depend on the latest versions of the specified modules at the
@@ -34,6 +37,10 @@ TASK CONTENTS
   Task::BeLike::RSRCHBOY
 
   DBIx::Class::Schema::Loader
+
+  Devel::Cover::Report::Coveralls
+
+    The better to see your test coverage, my dear.
 
 AUTHOR
 

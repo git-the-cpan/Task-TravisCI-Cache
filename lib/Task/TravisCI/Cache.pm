@@ -9,8 +9,8 @@
 #
 package Task::TravisCI::Cache;
 our $AUTHORITY = 'cpan:RSRCHBOY';
-# git description: afe1413
-$Task::TravisCI::Cache::VERSION = '0.001';
+# git description: 0.001-5-g24c805a
+$Task::TravisCI::Cache::VERSION = '0.002';
 
 # ABSTRACT: Packages pulled in when building a Perl cache for TravisCI
 
@@ -28,7 +28,7 @@ Task::TravisCI::Cache - Packages pulled in when building a Perl cache for Travis
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 DESCRIPTION
 
@@ -37,7 +37,9 @@ cache, at L<https://github.com/RsrchBoy/travis-p5-cache>.
 
 Note that while I say "my ...  cache", that certainly doesn't mean that you
 cannot use it, or that I won't accept pull-requests for the inclusion of
-additional packages (within reason, at least).
+additional packages (within reason, at least).  While I'm aiming for a more
+general use case than "just @RsrchBoy's distributions", for right now that
+provides a convenient initial target.
 
 This distribution is build using the L<LatestPrereqs plugin|Dist::Zilla::Plugin::LatestPrereqs>,
 so it will always depend on the latest versions of the specified modules at
@@ -56,6 +58,10 @@ The installed version appears to cause some random ABEND on the Travis v5.18 ima
 =head3 L<Task::BeLike::RSRCHBOY>
 
 =head3 L<DBIx::Class::Schema::Loader>
+
+=head3 L<Devel::Cover::Report::Coveralls>
+
+The better to see your test coverage, my dear.
 
 =head1 AUTHOR
 

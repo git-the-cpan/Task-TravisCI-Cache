@@ -49,7 +49,8 @@ sub pmver {
 }
 
 eval { $v .= pmver('DBIx::Class::Schema::Loader','0.07042') };
-eval { $v .= pmver('Dist::Zilla::PluginBundle::RSRCHBOY','0.055') };
+eval { $v .= pmver('Devel::Cover::Report::Coveralls','0.11') };
+eval { $v .= pmver('Dist::Zilla::PluginBundle::RSRCHBOY','0.058') };
 eval { $v .= pmver('ExtUtils::MakeMaker','any version') };
 eval { $v .= pmver('File::Spec','any version') };
 eval { $v .= pmver('IO::Handle','any version') };
